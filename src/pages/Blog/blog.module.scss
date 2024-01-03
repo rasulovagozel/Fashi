@@ -1,0 +1,201 @@
+.blog {
+  overflow: hidden;
+  .header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    gap: 10px;
+    .activeList {
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+      align-items: flex-start;
+      a {
+        text-decoration: none;
+        font-size: 16px;
+        color: #252525;
+      }
+      .arrow {
+        font-size: 16px;
+        color: #b2b2b2;
+      }
+    }
+    .pageName {
+      font-size: 16px;
+      color: #b2b2b2;
+      font-size: 16px;
+    }
+  }
+  .aside {
+    .search,
+    .categories,
+    .recentPost,
+    .productTags {
+      margin-bottom: 55px;
+      h2 {
+        color: #252525;
+        font-weight: 700;
+        margin-bottom: 12px;
+        font-size: 24px;
+      }
+    }
+    .search {
+      form {
+        position: relative;
+        input {
+          height: 46px;
+          width: 100%;
+          border: 2px solid #ececec;
+          padding-left: 20px;
+          font-size: 18px;
+          color: #b2b2b2;
+        }
+        button {
+          position: absolute;
+          right: 0;
+          top: 0;
+          color: #ffffff;
+          background: #252525;
+          border: 1px solid #252525;
+          height: 46px;
+          padding: 0 15px;
+          cursor: pointer;
+        }
+      }
+    }
+    .categories {
+      .list {
+        display: flex;
+        flex-direction: column;
+        a {
+          text-decoration: none;
+          font-size: 16px;
+          color: #636363;
+          line-height: 39px;
+          cursor: pointer;
+        }
+      }
+    }
+    .recentPost {
+      .block {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: flex-end;
+        .text {
+          .header {
+            p {
+              color: #252525;
+              line-height: 24px;
+              font-weight: 700;
+            }
+          }
+          .date {
+            display: flex;
+            flex-direction: row;
+            span {
+              font-size: 12px;
+              font-weight: 700;
+              text-transform: uppercase;
+              color: #e7ab3c;
+              letter-spacing: 2px;
+            }
+            a {
+              text-decoration: none;
+              color: #b2b2b2;
+              font-weight: 400;
+              text-transform: capitalize;
+              letter-spacing: 0;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    .productTags{
+      .tags{
+        button{
+          font-size: 16px;
+          color: #636363;
+          padding: 5px 15px;
+          border: 1px solid #ebebeb;
+          margin-right: 5px;
+          margin-bottom: 9px;
+          border-radius: 2px;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  .blogs {
+    .card {
+      .image {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          cursor: pointer;
+        }
+      }
+      .info {
+        margin-top: 20px;
+        .head {
+          p {
+            color: #252525;
+            font-weight: 700;
+            line-height: 30px;
+            margin-bottom: 16px;
+            font-size: 24px;
+          }
+        }
+        .date {
+          span {
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #e7ab3c;
+            letter-spacing: 2px;
+            line-height: 20px;
+          }
+          a {
+            text-decoration: none;
+            color: #b2b2b2;
+            font-weight: 400;
+            text-transform: capitalize;
+            letter-spacing: 0;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    .loading {
+      margin-top: 50px;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      span {
+        svg {
+          font-size: 20px;
+        }
+      }
+      a {
+        font-size: 18px;
+        font-weight: 700;
+        color: #252525;
+        text-decoration: none;
+        position: relative;
+        &::after{
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          background-color: #e7ab3c;
+          bottom: 0;
+          left: 0;
+          content: "";
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.pages{
+    .header {
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+        gap: 10px;
+        .activeList {
+          display: flex;
+          flex-direction: row;
+          gap: 5px;
+          align-items: flex-start;
+          a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #252525;
+          }
+          .arrow {
+            font-size: 16px;
+            color: #b2b2b2;
+          }
+        }
+        .pageName {
+          font-size: 16px;
+          color: #b2b2b2;
+          font-size: 16px;
+        }
+      }
+}

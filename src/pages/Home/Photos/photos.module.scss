@@ -1,0 +1,82 @@
+.photos {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  .image1,
+  .image2,
+  .image3,
+  .image4,
+  .image5,
+  .image6 {
+    float: left;
+    width: 16.66%;
+    height: 320px;
+    text-align: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    overflow: hidden;
+    .icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+      span {
+        svg {
+          font-size: 36px;
+          color: #fff;
+          margin-bottom: 15px;
+        }
+      }
+      p {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+    &:hover {
+      filter: brightness(85%);
+      transition: 0.4s ease-in-out;
+      .icon {
+        display: block;
+        transition: 0.4s ease-in-out;
+      }
+    }
+  }
+  .image1 {
+    background-image: url("../../../assets/homePhotos/insta1.webp");
+  }
+  .image2 {
+    background-image: url("../../../assets/homePhotos/insta2.webp");
+  }
+  .image3 {
+    background-image: url("../../../assets/homePhotos/insta3.webp");
+  }
+  .image4 {
+    background-image: url("../../../assets/homePhotos/insta4.webp");
+  }
+  .image5 {
+    background-image: url("../../../assets/homePhotos/insta5.webp");
+  }
+  .image6 {
+    background-image: url("../../../assets/homePhotos/insta6.webp");
+  }
+}
+
+@media (max-width: 768px) {
+  .photos {
+    .image1,
+    .image2,
+    .image3,
+    .image4,
+    .image5,
+    .image6 {
+      width: 50%;
+    }
+  }
+}
