@@ -18,7 +18,7 @@ const Navbar = () => {
                <p>ALL DEPARTMENTS</p>
                <span><MdKeyboardArrowDown /></span>
                </div>
-               {/* <div className={styled.list}>
+               <div className={styled.list}>
                <ul>
                 <li>Women`s Clothing</li>
                 <li>Men`s Clothing</li>
@@ -29,7 +29,7 @@ const Navbar = () => {
                 <li>Luxury Brands</li>
                 <li>Brand Outdoor Apparel</li>
                </ul>
-               </div> */}
+               </div>
               </div>
             </div>
             <div className="col-lg-9">

@@ -1,6 +1,7 @@
 .navbar {
   background: #252525;
   .departments {
+    position: relative;
     .all {
       background: #3b3b3b;
       color: #ffffff;
@@ -21,31 +22,32 @@
         text-transform: uppercase;
       }
     }
-    // .list {
-    //   background-color: #ffffff;
-    //   position: absolute;
-    //   width: 100%;
-    //   top: 50px;
-    //   display: none;
-    //   ul {
-    //     list-style: none;
-    //     margin-top: 15px;
-    //     li {
-    //       color: #252525;
-    //       margin-bottom: 15px;
-    //       &:hover {
-    //         color: #e7ab3c;
-    //         transition: 0.1s ease-in-out;
-    //       }
-    //     }
-    //   }
-    // }
-    // &:hover {
-    //   .list {
-    //     transition: 0.3s ease-in-out;
-    //     display: block;
-    //   }
-    // }
+    .list {
+      z-index: 9999;
+      background-color: #ffffff;
+      position: absolute;
+      width: 100%;
+      top:50px;
+      display: none;
+      ul {
+        list-style: none;
+        margin-top: 15px;
+        li {
+          color: #252525;
+          margin-bottom: 15px;
+          &:hover {
+            color: #e7ab3c;
+            transition: 0.1s ease-in-out;
+          }
+        }
+      }
+    }
+    &:hover {
+      .list {
+        transition: 0.3s ease-in-out;
+        display: block;
+      }
+    }
   }
   .nav_lists {
     ul {

@@ -18,7 +18,7 @@ const FromBlog = () => {
           </div>
           <div className="col-lg-12">
             <div className="row g-5">
-              <div className="col-lg-4">
+              <div className="col-lg-4 col-md-6 col-sm-12">
                 <div className={styled.card}>
                   <div className={styled.image}>
                     <img src={latest1} alt="" />
@@ -46,7 +46,7 @@ const FromBlog = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-4 col-md-6 col-sm-12">
                 <div className={styled.card}>
                   <div className={styled.image}>
                     <img src={latest2} alt="" />
@@ -74,7 +74,7 @@ const FromBlog = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-4 col-md-6 col-sm-12">
                 <div className={styled.card}>
                   <div className={styled.image}>
                     <img src={latest3} alt="" />
